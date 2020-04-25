@@ -1,1 +1,3 @@
 This is a new package, still in progress...
+
+It uses jest for testing.
