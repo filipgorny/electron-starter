@@ -22,7 +22,7 @@
     "ts-jest": "^25.4.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^1.0.0-pre.39",
-    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths": "^3.14.1",
     "typescript": "^3.8.3",
     "typescript-transform-paths": "^1.1.14"
   },
