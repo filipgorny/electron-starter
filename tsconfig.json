@@ -1,20 +1,16 @@
 {
   "compilerOptions": {
-      "module": "commonjs",
-      "resolveJsonModule": true,
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist",
-      "experimentalDecorators": true,
-      "baseUrl": "./src",
-      "rootDir": "./src",
-      "downlevelIteration": true
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "downlevelIteration": true
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "tests"
-  ]
+  "exclude": ["node_modules", "dist", "tests"]
 }

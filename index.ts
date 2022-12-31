@@ -1,1 +1,3 @@
-export * from './src';
+import { tool } from "./src/index";
+
+tool();
