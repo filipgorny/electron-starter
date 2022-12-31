@@ -23,10 +23,21 @@ export class Config {
     );
   }
 
-  public async read<T>(path: string): Promise<T> {
+  public async read<T>(path: string, defaultValue: T): Promise<T> {
     this.load();
 
-    return await this.db.getObject<T>(path);
+    const value = await this.db.getObject<T>(path);
+
+    const isSaved = (await this.db.exists(`${path}/_saved`)) === true;
+
+    if (!value || !isSaved) {
+      this.db.push(path, defaultValue);
+      this.db.push(`${path}/_saved`, true);
+
+      return defaultValue;
+    }
+
+    return value;
   }
 
   public write(path: string, object: object) {
