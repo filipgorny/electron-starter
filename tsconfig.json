@@ -10,7 +10,8 @@
     "experimentalDecorators": true,
     "baseUrl": "./",
     "rootDir": "./",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "dist", "tests"]
 }
